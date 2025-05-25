@@ -1,0 +1,502 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alotech - Transformación Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        .hero-section {
+            background-image: url('23.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            min-height: 600px;
+        }
+        
+        .logo {
+            height: 40px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        @media (max-width: 600px) {
+            .logo-mobile {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Header fijo -->
+    <header class="fixed w-full bg-white shadow-sm z-50 py-3 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="imagen1.jpg" alt="Alotech Logo" class="logo">
+            </div>
+            
+            <!-- Menú de navegación -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-gray-800 hover:text-pink-600 font-medium">Inicio</a>
+                <a href="#nosotros" class="text-gray-800 hover:text-pink-600 font-medium">Nosotros</a>
+                <a href="#servicios" class="text-gray-800 hover:text-pink-600 font-medium">Servicios</a>
+                <a href="#aliados" class="text-gray-800 hover:text-pink-600 font-medium">Aliados</a>
+                <a href="#casos-exito" class="text-gray-800 hover:text-pink-600 font-medium">Casos de Éxito</a>
+                <a href="#contacto" class="text-gray-800 hover:text-pink-600 font-medium">Contacto</a>
+                <a href="#diagnostico" class="bg-pink-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-pink-700 transition ml-4">
+                    Diagnóstico
+                </a>
+            </nav>
+            
+            <!-- Botón menú móvil -->
+            <button class="md:hidden text-2xl text-gray-800">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero-section pt-32 pb-20 text-white flex items-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl backdrop-blur-sm bg-black/30 p-8 rounded-xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Impulsamos la transformación digital de tu empresa</h1>
+                <p class="text-xl mb-8">Soluciones tecnológicas personalizadas para potenciar el crecimiento de tu negocio en la era digital.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#diagnostico" class="bg-pink-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-pink-700 transition">
+                        Haz tu Diagnóstico Gratuito
+                    </a>
+                    <a href="#servicios" class="bg-white text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+                        Conoce nuestros servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6 text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Quiénes Somos?</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                En Alotech nos dedicamos a impulsar la transformación digital de empresas en Barranquilla y toda Colombia, con un enfoque especial en PyMEs que buscan crecer con tecnología.
+            </p>
+        </div>
+      
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Columna izquierda - Historia, Misión y Visión -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Nuestra Historia</h3>
+                    <p class="text-gray-700 mb-8">
+                        Fundada en 2024, Alotech nació con la misión de democratizar el acceso a la transformación digital para empresas de todos los tamaños.
+                    </p>
+        
+                    <h3 class="text-xl font-semibold mb-2">Misión</h3>
+                    <p class="text-gray-700 mb-8">
+                        Facilitar la integración tecnológica en las empresas colombianas, transformando procesos tradicionales en soluciones digitales eficientes.
+                    </p>
+        
+                    <h3 class="text-xl font-semibold mb-2">Visión</h3>
+                    <p class="text-gray-700">
+                        Ser el referente en transformación digital empresarial en Colombia, reconocidos por nuestro enfoque humano y resultados medibles.
+                    </p>
+                </div>
+      
+                <!-- Columna derecha - Valores -->
+                <div class="bg-gray-50 rounded-xl p-8 h-full">
+                    <h3 class="text-2xl font-bold mb-8 text-center">Nuestros Valores</h3>
+                    <div class="space-y-6">
+                        <!-- Valor: Innovación -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-lightbulb-line text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Innovación</h4>
+                                <p class="text-gray-600">Buscamos constantemente nuevas formas de resolver desafíos empresariales con tecnología.</p>
+                            </div>
+                        </div>
+          
+                        <!-- Valor: Compromiso -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-heart-line text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Compromiso</h4>
+                                <p class="text-gray-600">Nos involucramos profundamente en cada proyecto.</p>
+                            </div>
+                        </div>
+          
+                        <!-- Valor: Transparencia -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-eye-line text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Transparencia</h4>
+                                <p class="text-gray-600">Comunicamos con claridad cada paso del proceso.</p>
+                            </div>
+                        </div>
+          
+                        <!-- Valor: Colaboración -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-team-line text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Colaboración</h4>
+                                <p class="text-gray-600">Trabajamos en estrecha colaboración con nuestros clientes.</p>
+                            </div>
+                        </div>
+          
+                        <!-- Valor: Excelencia -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="ri-award-line text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Excelencia</h4>
+                                <p class="text-gray-600">Nos esforzamos por superar expectativas en cada proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Encabezado -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Servicios</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Ofrecemos soluciones integrales para cada etapa de tu transformación digital.</p>
+            </div>
+
+            <!-- Grid de Servicios -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Servicio 1: Consultor IA -->
+                <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-blue-900 to-purple-800 flex items-center justify-center">
+                        <i class="ri-robot-line ri-3x text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Diagnóstico IA</h3>
+                        <p class="text-gray-600 mb-4">Evaluación avanzada del nivel de madurez digital de tu empresa, basada en estándares de Mintic, Cisco y Digital Advisor. Obtén un diagnóstico personalizado y recomendaciones accionables.</p>
+                        <a href="#diagnostico" class="text-pink-600 font-medium flex items-center hover:text-pink-700">
+                            Iniciar evaluación <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Conexión Tecnología -->
+                <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-purple-800 to-pink-600 flex items-center justify-center">
+                        <i class="ri-link-m ri-3x text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Conexión Tecnología</h3>
+                        <p class="text-gray-600 mb-4">Conectamos tu empresa con proveedores certificados que se ajustan a tu industria, nivel de madurez digital y necesidades específicas. Garantizamos las mejores soluciones para tu negocio.</p>
+                        <a href="#contacto" class="text-pink-600 font-medium flex items-center hover:text-pink-700">
+                            Explorar proveedores <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Plataforma de Formación -->
+                <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-pink-600 to-blue-600 flex items-center justify-center">
+                        <i class="ri-graduation-cap-line ri-3x text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Plataforma de Formación</h3>
+                        <p class="text-gray-600 mb-4">Accede a cursos prácticos y certificaciones reconocidas. Desarrolla las competencias digitales necesarias para liderar la transformación de tu empresa.</p>
+                        <a href="#contacto" class="text-pink-600 font-medium flex items-center hover:text-pink-700">
+                            Explorar formación <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Automatización de Consultoría -->
+                <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+                        <i class="ri-customer-service-2-line ri-3x text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Automatización de Consultoría</h3>
+                        <p class="text-gray-600 mb-4">Asistencia 24/7 con IA para apoyar tus decisiones tecnológicas.Obtén respuestas inmediatas a tus consultas y recomendaciones basadas en datos en tiempo real.</p>
+                        <a href="#contacto" class="text-pink-600 font-medium flex items-center hover:text-pink-700">
+                            Consultar ahora <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Diagnóstico Digital -->
+    <section id="diagnostico" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="bg-gradient-to-r from-blue-900 to-purple-800 rounded-xl overflow-hidden shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Columna Formulario -->
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Diagnóstico Digital Gratuito</h2>
+                        <p class="text-white/90 mb-8">Descubre el potencial de transformación digital de tu empresa con nuestro diagnóstico personalizado.</p>
+                        
+                        <form id="diagnosticForm" class="space-y-4">
+                            <div>
+                                <input type="text" name="nombre" placeholder="Nombre completo" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-pink-500" required>
+                            </div>
+                            
+                            <div>
+                                <input type="email" name="email" placeholder="Correo electrónico" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-pink-500" required>
+                            </div>
+                            
+                            <div>
+                                <input type="tel" name="telefono" placeholder="Teléfono" class="w-full px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-pink-500" required>
+                            </div>
+                            
+                            <div>
+                                <select name="empresa" class="w-full px-4 py-3 rounded-lg border-none pr-8 appearance-none bg-white text-gray-800 focus:ring-2 focus:ring-pink-500" required>
+                                    <option value="" disabled selected>Tamaño de empresa</option>
+                                    <option value="micro">Micro (1-9 empleados)</option>
+                                    <option value="pequena">Pequeña (10-49 empleados)</option>
+                                    <option value="mediana">Mediana (50-249 empleados)</option>
+                                    <option value="grande">Grande (250+ empleados)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <select name="sector" class="w-full px-4 py-3 rounded-lg border-none pr-8 appearance-none bg-white text-gray-800 focus:ring-2 focus:ring-pink-500" required>
+                                    <option value="" disabled selected>Sector</option>
+                                    <option value="comercio">Comercio</option>
+                                    <option value="servicios">Servicios</option>
+                                    <option value="manufactura">Manufactura</option>
+                                    <option value="tecnologia">Tecnología</option>
+                                    <option value="salud">Salud</option>
+                                    <option value="educacion">Educación</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-pink-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-pink-700 transition-colors">
+                                Iniciar Diagnóstico
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Columna Asistente IA -->
+                    <div class="bg-blue-800/20 p-8 md:p-12 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="mb-6 mx-auto w-48 h-48 bg-white rounded-full flex items-center justify-center animate-float">
+                                <i class="ri-robot-2-line text-5xl text-blue-800"></i>
+                            </div>
+                            
+                            <h3 class="text-2xl font-bold text-white mb-3">Asistente IA</h3>
+                            <p class="text-white/90 mb-6">Nuestro asistente virtual te guiará durante todo el proceso.</p>
+                            
+                            <div class="flex justify-center">
+                                <span class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white">
+                                    <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                                    Disponible 24/7
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Aliados -->
+    <section id="aliados" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Aliados</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Trabajamos con los mejores proveedores de tecnología para ofrecer soluciones integrales y de calidad a nuestros clientes.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="img/partner1.png" alt="Aliado 1" class="h-12">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="img/partner2.png" alt="Aliado 2" class="h-12">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="img/partner3.png" alt="Aliado 3" class="h-12">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="img/partner4.png" alt="Aliado 4" class="h-12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Casos de Éxito -->
+    <section id="casos-exito" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Casos de Éxito</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                Descubre cómo hemos ayudado a empresas como la tuya a transformarse digitalmente y alcanzar resultados extraordinarios.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Caso 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition">
+                    <img src="img/case1.jpg" alt="Caso éxito 1" class="rounded-lg mb-4 w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Digitalización de procesos</h3>
+                    <p class="text-gray-600 text-sm">
+                        Automatizamos la gestión de inventario, reduciendo un 40% los tiempos operativos.
+                    </p>
+                </div>
+                
+                <!-- Caso 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition">
+                    <img src="img/case2.jpg" alt="Caso éxito 2" class="rounded-lg mb-4 w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Marketplace para productores</h3>
+                    <p class="text-gray-600 text-sm">
+                        Plataforma digital que aumentó ventas en un 70%.
+                    </p>
+                </div>
+                
+                <!-- Caso 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition">
+                    <img src="img/case3.jpg" alt="Caso éxito 3" class="rounded-lg mb-4 w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Capacitación digital</h3>
+                    <p class="text-gray-600 text-sm">
+                        Formación en herramientas digitales para equipo directivo.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contacto" class="bg-pink-600 from-fuchsia-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition">
+                    Quiero resultados similares
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Contáctanos</h2>
+                <p class="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+                    Estamos listos para impulsar la transformación digital de tu empresa.Contáctanos y comencemos a trabajar juntos.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Formulario -->
+                <form class="bg-white rounded-xl shadow-lg p-8 space-y-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500">
+                    </div>
+
+                    <div>
+                        <label for="correo" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500">
+                    </div>
+
+                    <div>
+                        <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit"
+                                class="bg-pink-600 from-fuchsia-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition">
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Información de contacto -->
+                <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Información de contacto</h3>
+                            <p class="text-gray-600"><strong>Email:</strong> Alotech.comunicaciones@gmail.com</p>
+                            <p class="text-gray-600"><strong>Teléfono:</strong> +57 300 3413228</p>
+                            <p class="text-gray-600"><strong>Ubicación:</strong> Barranquilla, Colombia</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Síguenos</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com" target="_blank" class="text-fuchsia-600 text-2xl hover:text-purple-600">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://www.linkedin.com" target="_blank" class="text-fuchsia-600 text-2xl hover:text-purple-600">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                                <a href="https://wa.me/573003413228" target="_blank" class="text-fuchsia-600 text-2xl hover:text-purple-600">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>© 2025 Alotech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menú móvil
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const navMenu = document.querySelector('nav.hidden.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-16');
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('right-0');
+                navMenu.classList.toggle('bg-white');
+                navMenu.classList.toggle('p-4');
+                navMenu.classList.toggle('shadow-md');
+            });
+
+            // Smooth scrolling para enlaces
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
